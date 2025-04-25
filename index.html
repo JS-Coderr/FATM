@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Forests and Their Management Quiz (Assignments 1–9)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+    legend {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    .question {
+      margin: 10px 0;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Forests and Their Management Quiz (Assignments 1–9)</h2>
+  <form id="quizForm">
+  
+    <!-- Assignment 1 -->
+    <fieldset>
+      <legend>Question 1 (Assignment 1)</legend>
+      <p class="question">Which of these is not a consumptive value?</p>
+      <label><input type="radio" name="q1" value="a"> a. timber</label>
+      <label><input type="radio" name="q1" value="b"> b. firewood</label>
+      <label><input type="radio" name="q1" value="c"> c. non-timber forest products</label>
+      <label><input type="radio" name="q1" value="d"> d. education</label>
+    </fieldset>
+    
+    <!-- Assignment 2 -->
+    <fieldset>
+      <legend>Question 2 (Assignment 2)</legend>
+      <p class="question">Lithosere is an example of:</p>
+      <label><input type="radio" name="q2" value="a"> a. hydrosere</label>
+      <label><input type="radio" name="q2" value="b"> b. xerosere</label>
+      <label><input type="radio" name="q2" value="c"> c. psammosere</label>
+      <label><input type="radio" name="q2" value="d"> d. halosere</label>
+    </fieldset>
+    
+    <!-- Assignment 3 -->
+    <fieldset>
+      <legend>Question 3 (Assignment 3)</legend>
+      <p class="question">Khadar is a type of:</p>
+      <label><input type="radio" name="q3" value="a"> a. black cotton soil</label>
+      <label><input type="radio" name="q3" value="b"> b. alluvial soil</label>
+      <label><input type="radio" name="q3" value="c"> c. saline soil</label>
+      <label><input type="radio" name="q3" value="d"> d. red and yellow soil</label>
+    </fieldset>
+    
+    <!-- Assignment 4 -->
+    <fieldset>
+      <legend>Question 4 (Assignment 4)</legend>
+      <p class="question">For absolute form factor, the reference for the base of the cylinder is:</p>
+      <label><input type="radio" name="q4" value="a"> a. base of the tree</label>
+      <label><input type="radio" name="q4" value="b"> b. breast height</label>
+      <label><input type="radio" name="q4" value="c"> c. 10% of tree height</label>
+      <label><input type="radio" name="q4" value="d"> d. 20% of tree height</label>
+    </fieldset>
+    
+    <!-- Assignment 5 -->
+    <fieldset>
+      <legend>Question 5 (Assignment 5)</legend>
+      <p class="question">This sampling employs a simple rule of selecting every kth unit starting with a number chosen at random from 1 to k. This is known as:</p>
+      <label><input type="radio" name="q5" value="a"> a. Simple random sampling</label>
+      <label><input type="radio" name="q5" value="b"> b. Systematic sampling</label>
+      <label><input type="radio" name="q5" value="c"> c. Stratified sampling</label>
+      <label><input type="radio" name="q5" value="d"> d. Multistage sampling</label>
+    </fieldset>
+    
+    <!-- Assignment 6 -->
+    <fieldset>
+      <legend>Question 6 (Assignment 6)</legend>
+      <p class="question">Invasive climbers increase the probability of which of these fire types?</p>
+      <label><input type="radio" name="q6" value="a"> a. ground fire</label>
+      <label><input type="radio" name="q6" value="b"> b. surface fire</label>
+      <label><input type="radio" name="q6" value="c"> c. ladder fire</label>
+      <label><input type="radio" name="q6" value="d"> d. firestorm</label>
+    </fieldset>
+    
+    <!-- Assignment 7 -->
+    <fieldset>
+      <legend>Question 7 (Assignment 7)</legend>
+      <p class="question">Taungya regeneration is:</p>
+      <label><input type="radio" name="q7" value="a"> a. natural regeneration</label>
+      <label><input type="radio" name="q7" value="b"> b. artificial regeneration with villagers</label>
+      <label><input type="radio" name="q7" value="c"> c. artificial regeneration with nomadic tribes</label>
+      <label><input type="radio" name="q7" value="d"> d. artificial regeneration with hunters and gatherers</label>
+    </fieldset>
+    
+    <!-- Assignment 8 -->
+    <fieldset>
+      <legend>Question 8 (Assignment 8)</legend>
+      <p class="question">Shelterwood system results in:</p>
+      <label><input type="radio" name="q8" value="a"> a. even‐aged stand with natural aesthetics</label>
+      <label><input type="radio" name="q8" value="b"> b. even‐aged stand with artificial aesthetics</label>
+      <label><input type="radio" name="q8" value="c"> c. uneven‐aged stand with natural aesthetics</label>
+      <label><input type="radio" name="q8" value="d"> d. uneven‐aged stand with artificial aesthetics</label>
+    </fieldset>
+    
+    <!-- Assignment 9 -->
+    <fieldset>
+      <legend>Question 9 (Assignment 9)</legend>
+      <p class="question">Trees to be retained are shown in ______ marking colour:</p>
+      <label><input type="radio" name="q9" value="a"> a. yellow</label>
+      <label><input type="radio" name="q9" value="b"> b. blue</label>
+      <label><input type="radio" name="q9" value="c"> c. red</label>
+      <label><input type="radio" name="q9" value="d"> d. white</label>
+    </fieldset>
+    
+    <button type="button" onclick="checkAnswers()">Submit Quiz</button>
+  </form>
+  
+  <script>
+    function checkAnswers() {
+      let score = 0;
+      // Correct answers: based on the assignment answer keys (the correct answer is in bold in the original document)
+      // Q1: d, Q2: a, Q3: b, Q4: a, Q5: b, Q6: c, Q7: b, Q8: a, Q9: a
+      const correctAnswers = {
+        q1: "d",
+        q2: "a",
+        q3: "b",
+        q4: "a",
+        q5: "b",
+        q6: "c",
+        q7: "b",
+        q8: "a",
+        q9: "a"
+      };
+      
+      for (const [q, correct] of Object.entries(correctAnswers)) {
+        const radios = document.getElementsByName(q);
+        for (const radio of radios) {
+          if (radio.checked && radio.value === correct) {
+            score++;
+          }
+        }
+      }
+      
+      alert("Your score is " + score + " out of 9");
+    }
+  </script>
+</body>
+</html>
